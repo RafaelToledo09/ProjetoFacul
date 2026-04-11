@@ -1,0 +1,64 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.TiledBg,
+		C3.Plugins.Sprite,
+		C3.Behaviors.Tween,
+		C3.Plugins.Mouse,
+		C3.Plugins.Text,
+		C3.Plugins.Audio,
+		C3.Plugins.Sprite.Cnds.OnCreated,
+		C3.Behaviors.Tween.Acts.TweenTwoProperties,
+		C3.Behaviors.Tween.Acts.SetTweensDestroyOnComplete,
+		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
+		C3.Plugins.Sprite.Cnds.OnDestroyed,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Acts.CreateObject,
+		C3.Plugins.System.Exps.random,
+		C3.Plugins.System.Exps.layoutwidth,
+		C3.Plugins.System.Exps.layoutheight,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
+		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.System.Cnds.Every,
+		C3.Plugins.System.Acts.SubVar,
+		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.Sprite.Cnds.IsVisible,
+		C3.Plugins.System.Acts.ResetGlobals,
+		C3.Plugins.System.Acts.RestartLayout,
+		C3.JavaScriptInEvents.FolhaDeEventos1_Event8
+	];
+};
+self.C3_JsPropNameTable = [
+	{PlanoDeFundoEmBlocos: 0},
+	{PlanoDeFundoEmBlocos2: 0},
+	{FoiClicada: 0},
+	{Interpolação: 0},
+	{Bolha: 0},
+	{Mouse: 0},
+	{TxtPontos: 0},
+	{TXTtempo: 0},
+	{Sprite: 0},
+	{RECOMEÇAR: 0},
+	{Auragameover: 0},
+	{Áudio: 0},
+	{SensibilidadeSimulada: 0},
+	{Pontos: 0},
+	{Tempo: 0}
+];
+
+self.InstanceType = {
+	PlanoDeFundoEmBlocos: class extends self.ITiledBackgroundInstance {},
+	PlanoDeFundoEmBlocos2: class extends self.ITiledBackgroundInstance {},
+	Bolha: class extends self.ISpriteInstance {},
+	Mouse: class extends self.IInstance {},
+	TxtPontos: class extends self.ITextInstance {},
+	TXTtempo: class extends self.ITextInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	RECOMEÇAR: class extends self.ISpriteInstance {},
+	Auragameover: class extends self.ISpriteInstance {},
+	Áudio: class extends self.IInstance {}
+}
