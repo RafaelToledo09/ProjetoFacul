@@ -180,3 +180,41 @@ html {
     box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
     border: 1px solid rgba(0, 255, 136, 0.5);
 }
+.blur-game {
+    filter: blur(10px);
+    pointer-events: none;
+    transition: filter 0.5s ease;
+}
+
+/*Light Mode*/
+body.light-mode {
+    
+    background-image: url(imgs/background\ light.jpg); 
+    background-color: #f4f4f9; 
+    color: #111; 
+}
+
+
+body.light-mode .modal {
+    background: #fff;
+    border: 2px solid #006400; 
+    box-shadow: none; 
+    color: #000;
+}
+
+body.light-mode .neon-text {
+    color: #006400;
+    text-shadow: none;
+}
+
+body.light-mode #age-input {
+    background: #fff;
+    color: #000;
+    border: 1px solid #006400;
+}
+
+body.light-mode .neon-button {
+    background: #006400;
+    color: #fff;
+    box-shadow: none;
+}
