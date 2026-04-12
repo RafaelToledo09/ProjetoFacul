@@ -29,7 +29,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.IsVisible,
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Acts.RestartLayout,
-		C3.JavaScriptInEvents.FolhaDeEventos1_Event8
+		C3.JavaScriptInEvents.FolhaDeEventos1_Event8,
+		C3.Plugins.Mouse.Cnds.OnClick,
+		C3.Plugins.System.Acts.GoToLayout
 	];
 };
 self.C3_JsPropNameTable = [
@@ -45,6 +47,8 @@ self.C3_JsPropNameTable = [
 	{RECOMEÇAR: 0},
 	{Auragameover: 0},
 	{Áudio: 0},
+	{PlanoDeFundoEmBlocos3: 0},
+	{Sprite2: 0},
 	{SensibilidadeSimulada: 0},
 	{Pontos: 0},
 	{Tempo: 0}
@@ -60,5 +64,7 @@ self.InstanceType = {
 	Sprite: class extends self.ISpriteInstance {},
 	RECOMEÇAR: class extends self.ISpriteInstance {},
 	Auragameover: class extends self.ISpriteInstance {},
-	Áudio: class extends self.IInstance {}
+	Áudio: class extends self.IInstance {},
+	PlanoDeFundoEmBlocos3: class extends self.ITiledBackgroundInstance {},
+	Sprite2: class extends self.ISpriteInstance {}
 }

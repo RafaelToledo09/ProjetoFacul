@@ -4,7 +4,7 @@ const scriptsInEvents = {
 
 	async FolhaDeEventos1_Event8(runtime, localVars)
 	{
-		document.title= "BubleAim | Score: " + runtime.globalVars.Pontos;
+		window.parent.document.title = "BubbleAim | Score: " + runtime.globalVars.Pontos;
 	}
 };
 

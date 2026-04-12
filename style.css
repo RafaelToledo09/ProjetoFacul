@@ -218,3 +218,28 @@ body.light-mode .neon-button {
     color: #fff;
     box-shadow: none;
 }
+
+#game-container {
+    display: block !important;
+    
+    /* --- TAMANHO NOVO E SEM BORDAS PRETAS --- */
+    width: 1600px !important;  /* Jogo mais largo */
+    height: 900px !important; /* Altura proporcional para sumir com as faixas */
+    
+    max-width: 100%;
+    margin: 100px auto !important; 
+    border: 3px solid #39FF14 !important; 
+    border-radius: 10px;
+    background-color: #000; 
+    overflow: hidden;
+    scroll-snap-align: center !important; 
+    position: relative !important; 
+    z-index: 10 !important;
+}
+#game-iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    display: block !important;
+    pointer-events: auto !important; /* Força o navegador a aceitar os seus cliques */
+}
